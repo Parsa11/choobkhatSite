@@ -1,0 +1,139 @@
+.theme-1{
+    background-color:rgb(39, 53, 58);
+}
+
+.body-bg{
+    background-color:#d7d8d9 ;
+}
+
+.cardThem{
+    background-color: rgb(171, 182, 194);
+    border-radius: 10px;
+    height: 350px;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.ltr {
+    direction: ltr;
+}
+
+.logo {
+    position: relative;
+    opacity: 0.95;
+    max-width: 5%;
+}
+
+.tex-box{
+    background-color: beige;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.main{
+    min-height: 1050px;
+    margin-top: 30px;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.main-2{
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.bg-left-meno{
+    background-color:rgb(222, 225, 228);
+    position: fixed;
+    width: auto;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.exam{
+
+    background-color:rgb(222, 225, 228) ;
+}
+
+.exam-bar{
+    border-radius: 5px;
+    background-color: rgb(123, 181, 240);
+}
+
+.verify{
+    display: none;
+}
+.ppage{
+    display: none;
+}
+.error-token{
+    min-height: 105px;
+}
+.bg-error{
+    background-color: rgb(223, 201, 201);
+    border: 3px solid #d9534f;
+    border-radius: 20px;
+}
+
+.error-t{
+    font-size: small;
+    font-weight: bold;
+}
+
+.error-t-l{
+    font-size: small;
+    color: #0275d8;
+    font-weight: bold;
+}
+
+
+.pagination{
+    background-color:#343a40;
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.pagination > li > a
+{
+    background-color: #465257;
+    color: #f7f7f7;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #f7f7f7;
+    background-color: #343a40;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: white !Important;
+    border: solid 1px white !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #343a40 !Important;
+    border: solid 1px #8f80a7;
+}
+
+.page-form{
+    background-color: rgb(171, 182, 194);
+    height: 300%;
+    border-radius: 10px;
+}
