@@ -1,0 +1,41 @@
+{% extends 'exam/base.html' %}
+
+{% block content %}
+    <h1>{{ exams }}</h1>
+    {% for exam in exams %}
+        <article class="media content-section">
+            <div class="media-body">
+                <h2>
+                    {{ exam.title }}
+                </h2>
+                <p>
+                    {{ exam.description }}
+                </p>
+                <h4>
+                    هزینه انفرادی:
+                    {{ exam.individual_price }}
+                </h4>
+                <h4>
+                    هزینه گروهی:
+                    {{ exam.group_price }}
+                </h4>
+            </div>
+        </article>
+    {% endfor %}
+    {% if is_paginated %}
+        {% if page_obj.has_previous %}
+            <a class="btn btn-outline-info mb-4 " href="?page=1">صفحه اول</a>
+        {% endif %}
+        {% for num in page_obj.paginator.page_range %}
+            {% if page_obj.number == num %}
+                <a class="btn btn-info mb-4 " href="?page={{ num }}">{{ num }}</a>
+            {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                <a class="btn btn-outline-info mb-4 " href="?page={{ num }}">{{ num }}</a>
+            {% endif %}
+
+        {% endfor %}
+        {% if page_obj.has_next %}
+            <a class="btn btn-outline-info mb-4 " href="?page={{ page_obj.paginator.num_pages }}">صفحه آخر</a>
+        {% endif %}
+    {% endif %}
+{% endblock content %}
